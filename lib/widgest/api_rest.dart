@@ -1,4 +1,3 @@
-import 'package:aprendiendo_flutter/widgest/alert_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ApiRest extends StatefulWidget {
@@ -9,9 +8,6 @@ class ApiRest extends StatefulWidget {
 }
 
 class _ApiRestState extends State<ApiRest> {
-  // final _personas =
-  //     Person(name: "FACEBOOK", lastname: "MARK SUCERKBER", phone: '3535-5654');
-
   final List<Person> _personas = [
     Person(name: 'Camila Valentina', lastname: 'Garcia Leal', phone: '0000000'),
     Person(name: 'Abigail', lastname: 'Carillo Leal', phone: '0000000'),

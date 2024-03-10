@@ -70,13 +70,37 @@ class Home extends StatelessWidget {
               child: Text('Crear una Clase'),
             ),
           ),
-
-           Center(
+          Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/apiRest");
               },
               child: Text('Consumiendo una Api'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/apiRestHttp");
+              },
+              child: Text('Consumiendo una Api con Http'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/bottomNavigationBar");
+              },
+              child: Text('Bottom Navigation Bar '),
+            ),
+          ),
+
+           Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/animatedContainer");
+              },
+              child: Text('Animated Container'),
             ),
           ),
         ],

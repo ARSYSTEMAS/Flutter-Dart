@@ -1,7 +1,10 @@
 import 'package:aprendiendo_flutter/pages/Home.dart';
 import 'package:aprendiendo_flutter/widgest/alert_dialog.dart';
+import 'package:aprendiendo_flutter/widgest/animatedContainer.dart';
 import 'package:aprendiendo_flutter/widgest/api_rest.dart';
+import 'package:aprendiendo_flutter/widgest/bottomNavigationBar.dart';
 import 'package:aprendiendo_flutter/widgest/clases.dart';
+import 'package:aprendiendo_flutter/widgest/http121.dart';
 import 'package:aprendiendo_flutter/widgest/image_network.dart';
 import 'package:aprendiendo_flutter/widgest/inicio_sesion.dart';
 import 'package:aprendiendo_flutter/widgest/inicio_sesion_separados.dart';
@@ -22,7 +25,10 @@ class MyApp extends StatelessWidget {
     '/Navegacion': (context) => navegacionRutas(),
     '/alertDialog': (context) => alertDialog(),
     '/clases': (context) => Clases(),
-    '/apiRest': (context) => ApiRest()
+    '/apiRest': (context) => ApiRest(),
+    '/apiRestHttp': (context) => ApiRestII(),
+    '/bottomNavigationBar': (context) => BottonNavigationBar(),
+    '/animatedContainer': (context) => AnimatedContainerPage(),
   };
 
   @override
