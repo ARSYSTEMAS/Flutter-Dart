@@ -11,7 +11,8 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Aprendiendo Flutter desde Cero'),
       ),
-      body: Column(
+      body: ListView(
+        scrollDirection: Axis.vertical,
         children: [
           const Center(
             child: Text(
@@ -94,13 +95,36 @@ class Home extends StatelessWidget {
               child: Text('Bottom Navigation Bar '),
             ),
           ),
-
-           Center(
+          Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/animatedContainer");
               },
               child: Text('Animated Container'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/carrousel");
+              },
+              child: Text('Carrousel de Imagenes'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/persistenciaDatos");
+              },
+              child: Text('Persistencia de Datos'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/mandarInformacionPage");
+              },
+              child: Text('Mandar Informacion a otra Pagina'),
             ),
           ),
         ],

@@ -3,12 +3,15 @@ import 'package:aprendiendo_flutter/widgest/alert_dialog.dart';
 import 'package:aprendiendo_flutter/widgest/animatedContainer.dart';
 import 'package:aprendiendo_flutter/widgest/api_rest.dart';
 import 'package:aprendiendo_flutter/widgest/bottomNavigationBar.dart';
+import 'package:aprendiendo_flutter/widgest/carrousel.dart';
 import 'package:aprendiendo_flutter/widgest/clases.dart';
 import 'package:aprendiendo_flutter/widgest/http121.dart';
 import 'package:aprendiendo_flutter/widgest/image_network.dart';
 import 'package:aprendiendo_flutter/widgest/inicio_sesion.dart';
 import 'package:aprendiendo_flutter/widgest/inicio_sesion_separados.dart';
+import 'package:aprendiendo_flutter/widgest/mandarInformacionPage.dart';
 import 'package:aprendiendo_flutter/widgest/navegacion.dart';
+import 'package:aprendiendo_flutter/widgest/persistenciaDatos.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -29,6 +32,9 @@ class MyApp extends StatelessWidget {
     '/apiRestHttp': (context) => ApiRestII(),
     '/bottomNavigationBar': (context) => BottonNavigationBar(),
     '/animatedContainer': (context) => AnimatedContainerPage(),
+    '/carrousel': (context) => Carrousel(),
+    '/persistenciaDatos': (context) => PersistenciaDatos(),
+    '/mandarInformacionPage': (context) => MandarInformacionPage(),
   };
 
   @override
